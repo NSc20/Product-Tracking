@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <div id="wrapper">
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="refresh" content="5"/>
+    <title>Liegezeiten</title>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/assets/css/noscript.css" /></noscript>
+    {{ js_resources|indent(4)|safe }}
+    {{ css_resources|indent(4)|safe }}
+    {{ plot_script|indent(4)|safe }}
+  </head>
+  <body>
+      <h2 class="major">Kapitalbindungskosten</h2>
+      <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+      <p>Opportunitätskosten, die durch nicht genutztes Kapital entstehen.</p>
+    {{ plot_div|indent(4)|safe }}
+
+    <a href="/kapitalkosten"><button>Aktualisieren</button></a>
+  </body>
+</html>
